@@ -101,11 +101,11 @@ public class NBPCalendar {
 
     }
 
-    public LinkedList<NBPCalendar> getDatesBeetwen(NBPCalendar date) {
+    public LinkedList<NBPCalendar> getDatesBetween(NBPCalendar date) {
         NBPCalendar dateFirst;
         NBPCalendar dateSecond;
 
-        LinkedList<NBPCalendar> dates = new LinkedList<NBPCalendar>();
+        LinkedList<NBPCalendar> dates = new LinkedList<>();
 
         if (this.getIntYear() < date.getIntYear() ||
                 this.getIntMonth() < date.getIntMonth() ||

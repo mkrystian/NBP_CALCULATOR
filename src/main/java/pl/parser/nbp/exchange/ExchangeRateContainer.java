@@ -7,7 +7,7 @@ public class ExchangeRateContainer {
 
     public String sellRate;
     public String buyRate;
-    public String avarageRate;
+    public String averageRate;
 
     public double getDoubleSellRate() {
         return Double.valueOf(sellRate.replace(",", "."));
@@ -17,8 +17,4 @@ public class ExchangeRateContainer {
         return Double.valueOf(buyRate.replace(",", "."));
     }
 
-    public double getDoubleAvarageRate() {
-        return Double.valueOf(avarageRate.replace(",", "."));
-
-    }
 }

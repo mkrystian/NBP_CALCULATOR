@@ -25,9 +25,7 @@ public class NBPExchangeRateCalculator implements ExchangeRateCalculator {
         NBPCalendar firstDay = new NBPCalendar(date1);
         NBPCalendar secondDay = new NBPCalendar(date2);
         Currency usedCurrency = CurrencyFactory.getCurrency(currency);
-        LinkedList<NBPCalendar> dates = firstDay.getDatesBeetwen(secondDay);
-
-        LinkedList<Double> buyValues = new LinkedList<Double>();
+        LinkedList<NBPCalendar> dates = firstDay.getDatesBetween(secondDay);
 
         ExchangeRate exchangeInstance = new NBPExchangeRate(new NBPDocumentProvider());
 
@@ -63,9 +61,7 @@ public class NBPExchangeRateCalculator implements ExchangeRateCalculator {
         NBPCalendar firstDay = new NBPCalendar(date1);
         NBPCalendar secondDay = new NBPCalendar(date2);
         Currency usedCurrency = CurrencyFactory.getCurrency(currency);
-        LinkedList<NBPCalendar> dates = firstDay.getDatesBeetwen(secondDay);
-
-        LinkedList<Double> buyValues = new LinkedList<Double>();
+        LinkedList<NBPCalendar> dates = firstDay.getDatesBetween(secondDay);
 
         ExchangeRate exchangeInstance = new NBPExchangeRate(new NBPDocumentProvider());
 
@@ -102,9 +98,7 @@ public class NBPExchangeRateCalculator implements ExchangeRateCalculator {
         NBPCalendar firstDay = new NBPCalendar(date1);
         NBPCalendar secondDay = new NBPCalendar(date2);
         Currency usedCurrency = CurrencyFactory.getCurrency(currency);
-        LinkedList<NBPCalendar> dates = firstDay.getDatesBeetwen(secondDay);
-
-        LinkedList<Double> buyValues = new LinkedList<Double>();
+        LinkedList<NBPCalendar> dates = firstDay.getDatesBetween(secondDay);
 
         ExchangeRate exchangeInstance = new NBPExchangeRate(new NBPDocumentProvider());
 

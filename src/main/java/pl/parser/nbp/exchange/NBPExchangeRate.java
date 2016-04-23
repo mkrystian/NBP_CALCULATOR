@@ -54,9 +54,7 @@ public class NBPExchangeRate extends ExchangeRate {
 
         try {
             document = builder.parse(new InputSource(new StringReader(XMLDocument[0])));
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (SAXException | IOException e) {
             e.printStackTrace();
         }
 
@@ -76,9 +74,7 @@ public class NBPExchangeRate extends ExchangeRate {
 
         try {
             document = builder.parse(new InputSource(new StringReader(XMLDocument[1])));
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (SAXException | IOException e) {
             e.printStackTrace();
         }
 
@@ -90,7 +86,7 @@ public class NBPExchangeRate extends ExchangeRate {
             if (eElement.getElementsByTagName("kod_waluty").item(0).getTextContent().equals("EUR")) {
 
 
-                rates.avarageRate = eElement.getElementsByTagName("kurs_sredni").item(0).getTextContent();
+                rates.averageRate = eElement.getElementsByTagName("kurs_sredni").item(0).getTextContent();
 
             }
 

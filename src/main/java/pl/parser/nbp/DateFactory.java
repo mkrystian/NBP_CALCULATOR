@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class DateFactory {
 
-    public static SimpleDateFormat simpleDate = new SimpleDateFormat("yyyyy-mm-dd");
+    public static SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-mm-dd");
 
     public static Date getDate(String stringDate) {
         Date date = null;

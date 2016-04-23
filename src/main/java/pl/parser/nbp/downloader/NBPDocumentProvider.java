@@ -15,7 +15,7 @@ public class NBPDocumentProvider implements DocumentProviderInterface {
 
     private static String address = "http://www.nbp.pl/kursy/xml/";
 
-    private Map<String, String[]> filenameMap = new HashMap<String, String[]>();
+    private Map<String, String[]> filenameMap = new HashMap<>();
 
     @Override
     public String[] getDocument(NBPCalendar date) {
